@@ -12,7 +12,7 @@ function Carousel(props) {
     setSlide(slide === 0 ? 2 : slide - 1);
   };
   return (
-    <div className="h-[500px] w-[500px] relative  flex justify-center items-center">
+    <div className="h-[500px] w-[500px] relative z-0  flex justify-center items-center">
       <ArrowBackIosIcon
         onClick={prevSlide}
         className="  drop-shadow-xl absolute left-4 cursor-pointer"

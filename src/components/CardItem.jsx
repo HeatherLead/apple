@@ -16,7 +16,6 @@ function CardItem() {
     const json = JSON.stringify(cartItem.id);
     localStorage.removeItem("cartItem", json);
   };
-
   useEffect(() => {
     setCartItem(deleteItem);
   }, [deleteItem, setCartItem]);
@@ -26,27 +25,23 @@ function CardItem() {
       {cartItem.map((item, id) => (
         <div className="  relative flex   border-b-2 items-start pb-5">
           <img
-            className=" rounded-md ml-2 mt-[20px] h-28 w-28"
-            src={item.img1}
+            className=" rounded-md   ml-2 mt-[20px] h-28 w-28"
+            src={item.img2}
             alt=""
           />
-          <div className=" grid grid-cols-3 grid-rows-4 content-center place-content-center m-2 ">
-            <h1 className=" text-xl">{item.title}</h1>
-            <p></p>
-            <h1 className="   text-xl">{calcPrice(quantity, item.price)}</h1>
+          <div className=" grid grid-cols-2 grid-rows-4 gap-x-12  content-center  m-2 ">
+            <h1 className=" text-md">{item.title}</h1>
+            <h1 className="   text-xl">${calcPrice(quantity, item.price)}</h1>
             <p className=" text-gray-600">Lorem, ipsum.</p>
-            <p></p>
-            <p></p>
             <p></p>
             <p></p>
             <p></p>
             <a className=" text-gray-600" href="">
               {quantity}
             </a>
-            <p></p>
             <a
               onClick={() => removeFromCart(item.id)}
-              className=" text-[#4F46E5]"
+              className=" cursor-pointer text-[#4F46E5]"
             >
               remove
             </a>

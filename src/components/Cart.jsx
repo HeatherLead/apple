@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { CartContext } from "./ProductPage";
 import CancelIcon from "@mui/icons-material/Cancel";
 import CardItem from "./CardItem";
+import store from "./store";
 
 function Cart(props) {
   const { cartItem, setCartItem } = useContext(CartContext);
@@ -18,16 +19,14 @@ function Cart(props) {
   return (
     <div
       style={{ display: props.status ? "block" : "none" }}
-      className="  rounded-tl-lg right-0 fixed bg-white  shadow-2xl h-screen w-[450px]"
+      className=" z-10  rounded-tl-lg right-0 fixed bg-white  shadow-2xl h-screen w-[450px]"
     >
       <h1 onClick={crossClick} className=" cursor-pointer mb-8 pt-2 pl-3">
         <CancelIcon />
       </h1>
       <h1 className="  text-center text-4xl pb-10">My Cart</h1>
-      <div className=" overflow-scroll h-[510px] ">
-        {cartItem.map((item, id) => {
-          <CardItem key={id} item={item} setCartItem={setCartItem} />;
-        })}
+      <div className=" overflow-scroll overflow-x-hidden h-[510px] ">
+        <CardItem item={store[0]} />
       </div>
 
       <div className=" fixed bg-white pt-3  bottom-0 pb-8  flex-col w-[450px] flex justify-center">

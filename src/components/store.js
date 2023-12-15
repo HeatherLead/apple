@@ -9,6 +9,7 @@ const store = [
     title: "iphone 12",
     price: 499,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 1,
@@ -20,6 +21,7 @@ const store = [
     title: "iphone 13",
     price: 599,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 2,
@@ -31,6 +33,7 @@ const store = [
     title: "iphone 14",
     price: 699,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 3,
@@ -42,6 +45,7 @@ const store = [
     title: "iphone 15",
     price: 799,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 4,
@@ -53,6 +57,7 @@ const store = [
     title: "iphone 14 pro",
     price: 1399,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 5,
@@ -64,6 +69,7 @@ const store = [
     title: "iphone 15 pro",
     price: 1499,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 6,
@@ -75,6 +81,7 @@ const store = [
     title: "Airpod Max",
     price: 799,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 7,
@@ -86,6 +93,7 @@ const store = [
     title: "Airpods gen1",
     price: 299,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 8,
@@ -97,6 +105,7 @@ const store = [
     title: "Airpods pro gen1",
     price: 499,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 9,
@@ -108,6 +117,7 @@ const store = [
     title: "Airpods pro c",
     price: 599,
     qty: 1,
+    cQty: 1,
   },
   {
     id: 10,
@@ -119,6 +129,7 @@ const store = [
     title: "Macbook Air M1",
     price: 999,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 11,
@@ -127,9 +138,10 @@ const store = [
     img2: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1653084303665",
     img3: "https://icentralstore.in/wp-content/uploads/2022/08/macbook-air-starlight-gallery2-20220606.jpg",
     img4: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaB2MMqnlAvWSyZVELdMbb4PbSnv99UdepcNY3erqRf2ez43hrs6Ma2YasRpGJUJZZHuE&usqp=CAU",
-    title: "Mackbook Air M2",
+    title: "Macbook Air M2",
     price: 1199,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 12,
@@ -138,9 +150,10 @@ const store = [
     img2: "https://www.paklap.pk/media/catalog/product/cache/2cc443e44e97595ea39006016c876eaa/z/1/z17g002kq_paklap_gray.jpeg",
     img3: "https://images.hothardware.com/contentimages/article/3292/content/1x1_1200x1200_highres-apple-macbook-pro-14-m2-pro-2023.jpg",
     img4: "https://www.printer4you.com/media/images/org/apple-macbook-pro-m2-pro-19core-gpu-16gb-1tb-ssd-35_97cm-14_2zoll-spacegrau_213AP-MPHF3D-A_1.jpg",
-    title: "Mackbook pro M2",
+    title: "Macbook pro M2",
     price: 1799,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 13,
@@ -149,9 +162,10 @@ const store = [
     img2: "https://think-ecuador.com/wp-content/uploads/2021/12/MacBook_Pro_16-in_Space_Gray_PDP_Image_Position-1__MXLA.jpeg",
     img3: "https://www.aptronixindia.com/pub/media/catalog/product/m/b/mbp14-spacegray-select-202110-removebg-preview_2__1.png",
     img4: "https://molla.al/wp-content/uploads/2020/12/m1-sg-pro.png",
-    title: "Mackbook pro M1",
+    title: "Macbook pro M1",
     price: 1599,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 14,
@@ -160,9 +174,10 @@ const store = [
     img2: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-m3-max-pro-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830118",
     img3: "https://m.media-amazon.com/images/I/61x8BQ8-5wL._SX679_.jpg",
     img4: "https://m.media-amazon.com/images/I/61384664ZVL._SX679_.jpg",
-    title: "Mackbook pro M3",
+    title: "Macbook pro M3",
     price: 1999,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 15,
@@ -174,6 +189,7 @@ const store = [
     title: "ipad mini",
     price: 399,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 16,
@@ -185,6 +201,7 @@ const store = [
     title: "ipad",
     price: 499,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 17,
@@ -196,6 +213,7 @@ const store = [
     title: "ipad Pro",
     price: 699,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 18,
@@ -207,6 +225,7 @@ const store = [
     title: "Mac mini",
     price: 599,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 19,
@@ -218,6 +237,7 @@ const store = [
     title: "mac ",
     price: 699,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 20,
@@ -229,6 +249,7 @@ const store = [
     title: "Mac stdio Display",
     price: 1399,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 21,
@@ -240,6 +261,7 @@ const store = [
     title: "Mackbook Air M3",
     price: 1299,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 22,
@@ -251,6 +273,7 @@ const store = [
     title: "airpods gen 2",
     price: 399,
     qty: 1,
+    cQty: 0,
   },
   {
     id: 23,
@@ -262,6 +285,7 @@ const store = [
     title: "earpods",
     price: 99,
     qty: 1,
+    cQty: 0,
   },
 ];
 
