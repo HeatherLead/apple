@@ -3,12 +3,13 @@ import Set from "./Set";
 import Carousel from "./Carousel";
 import store from "./store";
 import { useParams } from "react-router-dom";
+import Trending from "./Trending";
 
 export const CartContext = createContext();
 
 function ProductPage(props) {
   const { id } = useParams();
-  const [price, setPrice] = useState(store[id].price);
+  const [data, setData] = useState(store[id]);
   const [qty, setQty] = useState(1);
 
   const { addToCart } = useContext(CartContext);
@@ -17,7 +18,7 @@ function ProductPage(props) {
     return qty * store[id].price;
   }
   return (
-    <div>
+    <div className="">
       <Set />
       <div className=" mt-14 flex flex-wrap items-center justify-around">
         <Carousel
@@ -66,7 +67,8 @@ function ProductPage(props) {
           <div className="flex justify-around">
             <button
               onClick={() => {
-                addToCart(store[id]);
+                data.cQty = qty;
+                addToCart(data);
               }}
               className=" border-2 border-black text-2xl hover:shadow-2xl font-bold pt-3 pb-2 pl-5 pr-5"
             >
@@ -78,6 +80,7 @@ function ProductPage(props) {
           </div>
         </div>
       </div>
+      <Trending />
     </div>
   );
 }

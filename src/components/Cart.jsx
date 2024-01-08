@@ -26,7 +26,7 @@ function Cart(props) {
       </h1>
       <h1 className="  text-center text-4xl pb-10">My Cart</h1>
       <div className=" overflow-scroll overflow-x-hidden h-[510px] ">
-        <CardItem item={store[0]} />
+        <CardItem item={store[props.id]} />
       </div>
 
       <div className=" fixed bg-white pt-3  bottom-0 pb-8  flex-col w-[450px] flex justify-center">
